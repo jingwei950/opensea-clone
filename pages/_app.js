@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import {ThirdwebWeb3Provider} from '@3rdweb/hooks'
+import Head from 'next/head'
 // import  { ThirdwebProvider } from '@thirdweb-dev/react'
 
 /**
@@ -30,6 +31,10 @@ function MyApp({ Component, pageProps }) {
       supportedChainIds={supportedChainIds}
       connectors={connectors}
     >
+      <Head>
+        <link rel="icon" href="https://opensea.io/static/images/logos/opensea.svg" />
+        <title>OpenSea</title>
+      </Head>
       <Component {...pageProps} />
     </ThirdwebWeb3Provider>
   )
