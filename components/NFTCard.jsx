@@ -3,7 +3,7 @@ import { BiHeart } from 'react-icons/bi'
 import Router from 'next/router'
 
 const style = {
-  wrapper: `bg-[#303339] flex-auto w-[14rem] h-[22rem] my-10 mx-5 rounded-2xl overflow-hidden cursor-pointer`,
+  wrapper: `bg-[#303339] flex-auto max-w-[14rem] h-[22rem] my-10 mx-5 rounded-2xl overflow-hidden cursor-pointer`,
   imgContainer: `h-2/3 w-full overflow-hidden flex justify-center items-center`,
   nftImg: `w-full object-cover`,
   details: `p-3`,
@@ -52,7 +52,7 @@ function NFTCard({nftItem, title, listings}) {
       }}
     >
       <div className={style.imgContainer}>
-        <img src={nftItem.image} alt={nftItem.name}  />
+        <img src={nftItem.image} alt={nftItem.name} className="h-full" />
       </div>
 
       <div className={style.details}>
@@ -66,7 +66,7 @@ function NFTCard({nftItem, title, listings}) {
               <div className={style.priceTag}>Price</div>
               <div className={style.priceValue}>
                 <img 
-                  src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg" 
+                  src="https://ethereum.org/static/a183661dd70e0e5c70689a0ec95ef0ba/6ed5f/eth-diamond-purple.webp" 
                   alt="eth"
                   className={style.ethLogo}
                 />
@@ -80,7 +80,7 @@ function NFTCard({nftItem, title, listings}) {
           <span className={style.likeIcon}>
             <BiHeart />
           </span> {' '}
-          {nftItem.likes}
+          {nftItem.likes ? nftItem.likes : '0'}
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ import {ThirdwebWeb3Provider} from '@3rdweb/hooks'
  * The `injected` connector is a web3 connection method used by Metamask
  */
 
-const supportedChainIds = [4] //4 means rinkeby chain (Can Google)
+const supportedChainIds = [80001] //4 means Polygon(Mumbai) chain (Can Google)
 const connectors = {
   injected: {},                     //Metamask connector
   walletconnect: {},                //WalletConnect connector

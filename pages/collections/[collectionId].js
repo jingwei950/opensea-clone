@@ -151,7 +151,7 @@ function Collection() {
     )
 
     return sdk.getMarketplaceModule( //3c. //3ci.
-      '0xe7954C8BADfC067f0bede8B709442a8FB04894bE'
+      '0xbA384a67BA2b45C80387d59333DB2452f79e5B95'
     )
   }, [provider]) //3d.
 
@@ -271,7 +271,7 @@ function Collection() {
             <div className={style.collectionStat}>
               <div className={style.statValue}>
                 <img 
-                  src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg" 
+                  src='https://ethereum.org/static/a183661dd70e0e5c70689a0ec95ef0ba/6ed5f/eth-diamond-purple.webp' 
                   alt="eth" 
                   className={style.ethLogo}
                 />
@@ -283,7 +283,7 @@ function Collection() {
             <div className={style.collectionStat}>
               <div className={style.statValue}>
                 <img 
-                  src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg" 
+                  src="https://ethereum.org/static/a183661dd70e0e5c70689a0ec95ef0ba/6ed5f/eth-diamond-purple.webp" 
                   alt="eth" 
                   className={style.ethLogo}
                 />
@@ -300,7 +300,7 @@ function Collection() {
           </div>
         </div>
 
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
           {nfts.map((nftItems, id) => (
             <NFTCard
               key={id}

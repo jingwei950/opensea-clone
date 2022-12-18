@@ -23,7 +23,7 @@ function EventItem({event}) {
       </div>
       <div className={`${style.eventPrice} flex-[2]`}>
         <img
-          src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"
+          src="https://ethereum.org/static/a183661dd70e0e5c70689a0ec95ef0ba/6ed5f/eth-diamond-purple.webp"
           alt="eth"
           className={style.ethLogo}
         />

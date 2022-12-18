@@ -37,7 +37,7 @@ function Header() {
         </div>
         <div className={style.headerItems}>
             {/* This collection address is copied from Thirdweb NFT collection (BAYC)*/}
-            <Link href="/collections/0xd2c1fEB3F0079d7c51Cf847d5691dD520EddBDdF"> 
+            <Link href="/collections/0x14d2f26e53A0c1cfA3cc9dc22b0d7f6A8eFdb0F3"> 
                 <div className={style.headerItem}>Explore</div>
             </Link>
             <div className={style.headerItem}>Stats</div>

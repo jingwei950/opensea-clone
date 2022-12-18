@@ -30,7 +30,7 @@ function Nft() {
       // 'https://eth-rinkeby.alchemyapi.io/v2/8WA2tslRLPEhqA2_CQNi5Z4PprgZltw8'
     )
 
-    return sdk.getNFTModule('0xd2c1fEB3F0079d7c51Cf847d5691dD520EddBDdF')
+    return sdk.getNFTModule('0x14d2f26e53A0c1cfA3cc9dc22b0d7f6A8eFdb0F3')
 
   },[provider])
 
@@ -55,7 +55,7 @@ function Nft() {
     )
 
     return sdk.getMarketplaceModule(
-      '0xe7954C8BADfC067f0bede8B709442a8FB04894bE'
+      '0xbA384a67BA2b45C80387d59333DB2452f79e5B95'
     )
 
   }, [provider])
