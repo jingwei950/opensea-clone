@@ -32,7 +32,6 @@ function NFTCard({nftItem, title, listings}) {
       //Check listed asset ID and nft ID matches, if match set the price and listed 
       if(listing.asset.id === nftItem.id){ 
         setIsListed(true)
-        console.log(listing)
         setPrice(listing.buyoutCurrencyValuePerToken.displayValue)
         break
       }
