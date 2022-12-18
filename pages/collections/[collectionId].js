@@ -22,6 +22,7 @@ import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
 import { HiDotsVertical } from 'react-icons/hi'
 import { VscGlobe } from 'react-icons/vsc'
 import { FaDiscord } from 'react-icons/fa'
+import ethIcon from '../../public/eth-diamond-purple.webp'
 
 
 const style = {
@@ -271,7 +272,7 @@ function Collection() {
             <div className={style.collectionStat}>
               <div className={style.statValue}>
                 <img 
-                  src='https://ethereum.org/static/a183661dd70e0e5c70689a0ec95ef0ba/6ed5f/eth-diamond-purple.webp' 
+                  src='/eth-diamond-purple.webp' 
                   alt="eth" 
                   className={style.ethLogo}
                 />
@@ -283,7 +284,7 @@ function Collection() {
             <div className={style.collectionStat}>
               <div className={style.statValue}>
                 <img 
-                  src="https://ethereum.org/static/a183661dd70e0e5c70689a0ec95ef0ba/6ed5f/eth-diamond-purple.webp" 
+                  src="/eth-diamond-purple.webp" 
                   alt="eth" 
                   className={style.ethLogo}
                 />
@@ -305,7 +306,7 @@ function Collection() {
             <NFTCard
               key={id}
               nftItem={nftItems}
-              title={collection.title}
+              title={collection?.title}
               listings={listings}
             />
           ))}
