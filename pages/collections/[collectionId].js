@@ -115,8 +115,6 @@ function Collection() {
   const [nfts, setNfts] = useState([]) //NFTs (NFT itself)
   const [listings, setListings] = useState([]) //NFT Listings ()
 
-  // console.log(provider)
-
   const nftModule = useMemo(() => {//1.
     if (!provider) return //1a.
 
@@ -129,8 +127,6 @@ function Collection() {
     return sdk.getNFTModule(collectionId) //1c. //1ci.
   }, [provider]) //1d.
 
-  // console.log(nftModule)
-
   useEffect(() => { //2.
     if (!nftModule) return //2a.
     
@@ -139,8 +135,6 @@ function Collection() {
       setNfts(nfts) //2bii.
     })() //2c.
   }, [nftModule]) //2d.
-
-  console.log(nfts)
 
   const marketPlaceModule = useMemo(() => { //3.
     if (!provider) return //3a.
