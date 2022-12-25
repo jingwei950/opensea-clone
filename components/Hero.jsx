@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import {AiOutlineInfoCircle} from 'react-icons/ai'
 
 const style = {
@@ -31,7 +32,9 @@ function Hero() {
                         OpenSea is the world&apos;s first and largest NFT marketplace
                     </div>
                     <div className={style.ctaContainer}>
-                        <button className={style.accentedButton}>Explore</button>
+                        <Link href="/collections/0x14d2f26e53A0c1cfA3cc9dc22b0d7f6A8eFdb0F3"> 
+                            <button className={style.accentedButton} >Explore</button>
+                        </Link>
                         <button className={style.button}>Create</button>
                     </div>
                 </div>
